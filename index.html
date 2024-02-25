@@ -3,53 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NIPPON Måltidskasser</title>
+    <title>Måltidskasser</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar">
+        <div id="bg-pattern"></div>
         <div class="nav-flex">
             <div class="nav-left">
                 <ul>
                     <li>Hjem</li>
-                    <li class="mega-menu">
-                        <div class="mega-menu-title">
+                    <li class="sub-menu sub-mega-menu">
+                        <div class="sub-menu-title">
                             Måltidskasser
                             <i class="fa-solid fa-caret-down"></i>
                         </div>
                         <div class="mega-menu-content-wrapper">
                             <div class="mega-menu-content">
-                                <a href="" style="background-image: url('/img/stock/AdobeStock_630295082_Preview.jpeg');">
+                                <a href="" style="background-image: url('./img/stock/AdobeStock_630295082_Preview.jpeg');">
                                     <h4>Skræddersyede</h4>
                                 </a>
-                                <a href="" style="background-image: url('/img/stock/AdobeStock_640408339_Preview.jpeg');">
+                                <a href="" style="background-image: url('./img/stock/AdobeStock_640408339_Preview.jpeg');">
                                     <h4>Veganske</h4>
                                 </a>
-                                <a href="" style="background-image: url('/img/stock/AdobeStock_706907738_Preview.jpeg');">
+                                <a href="" style="background-image: url('./img/stock/AdobeStock_706907738_Preview.jpeg');">
                                     <h4>Børnevenlige</h4>
                                 </a>
-                                <a href="" style="background-image: url('/img/stock/AdobeStock_700461901_Preview.jpeg');">
+                                <a href="" style="background-image: url('./img/stock/AdobeStock_700461901_Preview.jpeg');">
                                     <h4>Luksus</h4>
                                 </a>
-                                <a href="" style="background-image: url('/img/stock/AdobeStock_639785728_Preview.jpeg')">
+                                <a href="" style="background-image: url('./img/stock/AdobeStock_639785728_Preview.jpeg')">
                                     <h4>Sunde</h4>
                                 </a>
                             </div>
                         </div>
                     </li>
-                    <li>Sådan fungerer det</li>
+                    <li class="sub-menu">
+                        <div class="sub-menu-title" style="min-width: 260px;">
+                            <a href="">Sådan fungerer det</a>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                        <ul class="sub-menu-items">
+                            <li><a href="">Se vores priser</a></li>
+                            <li><a href="">Levering</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
             <div class="nav-middle">
-                <a href="../index.html"><img src="../img/logo/nippon3.svg" alt="logo"></a>
+                <a href="index.html"><img src="img/logo/nippon3.svg" alt="logo"></a>
             </div>
             <div class="nav-right">
                 <ul>
-                    <li>Om Nippon</li>
+                    <li class="sub-menu">
+                        <div class="sub-menu-title">
+                            <a href="">Om Nippon</a>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                        <ul class="sub-menu-items">
+                            <li><a href="">Opskriftsblog</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Vision</a></li>
+                        </ul>
+                    </li>
                     <li>Kontakt</li>
-                    <li>Login</li>
+                    <li class="sub-menu">
+                        <div class="sub-menu-title">
+                            <a href="">Login</a>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                        <ul class="sub-menu-items">
+                            <li><a href="">Brugerprofil</a></li>
+                            <li><a href="">Planlæg</a></li>
+                        </ul>
+                    </li>
                     <li id="cart"><i class="fa-solid fa-cart-shopping"></i></li>
                 </ul>
             </div>
@@ -62,39 +91,63 @@
             <h1>NIPPON Måltidskasser</h1>
         </header>
         <!-- Onboading -->
-        <section>
+        <header class="section-header">
+            <h1>Skræddersy din egen måltidskasse!</h1>
+            <div class="section-header-bg"></div>
+        </header>
+        <section id="onboarding">
+            <div class="left-article-video-section">
+                <article>
+                    <h6>Se videoeon og følg de fire steps for at tilpasse din helt egen måltidskasse.</h6>
+                    <h4>1. Åh nej?!</h4>
+                    <h4>2. Jeg har glemt min task'!</h4>
+                    <h4>3. Whatever you're smoking, give me sum' of that.</h4>
+                    <h4>4. Tillykke, du er 563.832 kr. i gæld!</h4>
+                    <button>Kom i gang!</button>
+                </article>
+                <video src="img/onboarding-example.mp4" autoplay muted loop>Video playback not supported.</video>
+            </div>
         </section>
         <!-- Ugens menu -->
-        <section>
+        <header class="section-header">
+            <h1>Ugens menu</h1>
+            <div class="section-header-bg"></div>
+        </header>
+        <section id="ugens-menu">
         </section>
         <!-- Retter -->
-        <section>
+        <section id="retter">
         </section>
-    </main>
-    <!-- Footer -->
-    <footer>
-        <div id="footer-wrapper">
-            <div id="footer-content">
-                <img id="footer-logo" src="img/logo/nippon2_white.svg" alt="logo">
-                <span>&copy NIPPON 2024</span>
+        <!-- Footer -->
+        <footer>
+            <div id="footer-wrapper">
+                <div id="footer-content">
+                    <img id="footer-logo" src="img/logo/nippon2_white.svg" alt="logo">
+                    <span>&copy NIPPON 2024</span>
+                </div>
+                <ul>
+                    <li><a href="">Måltidskasser</a></li>
+                    <li><a href="">Vores priser</a></li>
+                    <li><a href="">Levering</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Om Nippon</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Opskrifter</a></li>
+                </ul>
+                <ul>
+                    <li id="footer-socials">
+                        Følg os!
+                        <div>
+                            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-square-pinterest"></i></a>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <ul>
-                <li><a href="">Måltidskasser</a></li>
-                <li><a href="">Vores priser</a></li>
-                <li><a href="">Levering</a></li>
-            </ul>
-            <ul>
-                <li><a href="">Om Nippon</a></li>
-                <li><a href="">FAQ</a></li>
-                <li><a href="">Opskrifter</a></li>
-            </ul>
-            <ul>
-                <li><a href=""><i class="fa-brands fa-square-facebook"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-square-instagram"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-square-pinterest"></i></a></li>
-            </ul>
-        </div>
-    </footer>
+        </footer>
+    </main>
     <script src="scripts/navbar.js"></script>
 </body>
 </html>

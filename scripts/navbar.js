@@ -1,33 +1,34 @@
 const currentLocation = window.location.pathname;
 const navbar = document.querySelector('.navbar');
 
-const megaMenus = document.querySelectorAll('.mega-menu');
-megaMenus.forEach(megaMenu => {
-    megaMenu.addEventListener("mouseover", (e) => {
-        const carretDown = megaMenu.querySelector('i');
-        const contentWrapper = megaMenu.querySelector('.mega-menu-content-wrapper');
+const subMenus = document.querySelectorAll('.sub-menu');
+subMenus.forEach(subMenu => {
+    let contentClassName = subMenu.classList.contains('sub-mega-menu') ? 'mega-menu-content-wrapper' : 'sub-menu-items';
+    subMenu.addEventListener("mouseover", (e) => {
+        const carretDown = subMenu.querySelector('i');
+        const contentWrapper = subMenu.querySelector(`.${contentClassName}`);
 
-        carretDown.classList.add('mega-menu-hover-icon');
-        contentWrapper.classList.add('mega-menu-content-wrapper-hover');
-        contentWrapper.style.display = "flex";
-
-        e.preventDefault();
-    });
-    megaMenu.addEventListener("mouseleave", (e) => {
-        const carretDown = megaMenu.querySelector('i');
-        const contentWrapper = megaMenu.querySelector('.mega-menu-content-wrapper');
-
-        carretDown.classList.remove('mega-menu-hover-icon');
-        contentWrapper.classList.remove('mega-menu-content-wrapper-hover');
-        if (!contentWrapper.matches(':hover') && !megaMenu.matches(':hover'))
-            contentWrapper.style.display = "none";
+        carretDown.classList.add('sub-menu-hover-icon');
+        contentWrapper.classList.add(`${contentClassName}-hover`);
+        contentWrapper.style.setProperty('display', 'flex', 'important');
 
         e.preventDefault();
     });
+    subMenu.addEventListener("mouseleave", (e) => {
+        const carretDown = subMenu.querySelector('i');
+        const contentWrapper = subMenu.querySelector(`.${contentClassName}`);
 
-    const contentWrapper = megaMenu.querySelector('.mega-menu-content-wrapper');
+        carretDown.classList.remove('sub-menu-hover-icon');
+        contentWrapper.classList.remove(`${contentClassName}-hover`);
+        if (!contentWrapper.matches(':hover') && !subMenu.matches(':hover'))
+            contentWrapper.style.setProperty('display', 'none', 'important');
+
+        e.preventDefault();
+    });
+
+    const contentWrapper = subMenu.querySelector(`.${contentClassName}`);
     contentWrapper.addEventListener('mouseleave', (e) => {
-        contentWrapper.style.display = "none";
+        contentWrapper.style.setProperty('display', 'none', 'important');
         e.preventDefault();
     });
 });
