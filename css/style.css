@@ -84,7 +84,7 @@ section {
     align-items: center;
     width: 100%;
     margin: 0 0 30px 0;
-    min-height: 150px;
+    min-height: 70px;
     overflow: hidden;
     position: relative;
 }
@@ -95,11 +95,12 @@ section {
     position: absolute;
     top: 0;
     left: 0;
+    /* background-color: rgba(50, 50, 50, 0.5); */
     background-color: var(--pimary-color1);
-    background-blend-mode: saturation;
+    /* background-blend-mode: saturation;
     background-image: url('../img/kasser/luksus.png');
     background-position: center center;
-    background-size: cover;
+    background-size: cover; */
     opacity: 1;
     z-index: 0;
 }
@@ -355,7 +356,7 @@ h6 { font-size: 1.1em; }
 }
 
 .mega-menu-content a:hover {
-    background-color: rgb(129, 129, 129);
+    background-color: rgb(129, 129, 129) !important;
     background-blend-mode: overlay;
 }
 
@@ -370,8 +371,22 @@ h6 { font-size: 1.1em; }
     border-radius: 10px;
 }
 
+.orange {
+    background-color: var(--secondary-color3) !important;
+}
+.yellow {
+    background-color: var(--secondary-color2) !important;
+}
+.purple {
+    background-color: var(--secondary-color4) !important;
+}
+.blue {
+    background-color: var(--secondary-color1) !important;
+}
+
 
 /* HJEM */
+
 
 #hero-image {
     display: flex;
