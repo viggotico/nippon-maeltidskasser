@@ -361,6 +361,7 @@ h6 { font-size: 1.1em; }
 
 .mega-menu-content a h4 {
     color: var(--pimary-color1);
+    font-size: 1em;
     font-family: 'Gotham Rounded';
     text-transform: uppercase;
     letter-spacing: 0.06em;
