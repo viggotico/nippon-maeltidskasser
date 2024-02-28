@@ -15,7 +15,7 @@
         <div class="nav-flex">
             <div class="nav-left">
                 <ul>
-                    <li>Hjem</li>
+                    <li><a href="../">Hjem</a></li>
                     <li class="sub-menu sub-mega-menu">
                         <div class="sub-menu-title">
                             Måltidskasser
@@ -54,7 +54,7 @@
                 </ul>
             </div>
             <div class="nav-middle">
-                <a href="../index.html"><img src="../img/logo/nippon3.svg" alt="logo"></a>
+                <a href="../"><img src="../img/logo/nippon3.svg" alt="logo"></a>
             </div>
             <div class="nav-right">
                 <ul>
@@ -69,7 +69,7 @@
                             <li><a href="">Vision</a></li>
                         </ul>
                     </li>
-                    <li>Kontakt</li>
+                    <li><a href="../kontakt">Kontakt</a></li>
                     <li class="sub-menu">
                         <div class="sub-menu-title">
                             <a href="">Login</a>
@@ -88,9 +88,7 @@
     <!-- Main content -->
     <main>
         <!-- Header -->
-        <header id="hero-image">
-            <h1>Hero header</h1>
-        </header>
+        <header id="hero-image"></header>
         <!-- Section header -->
         <header class="section-header">
             <h1>Skræddersy din egen måltidskasse!</h1>
@@ -105,9 +103,9 @@
             <div class="tilpas-wrapper">
                 <h1>Tilpasningsværktøj</h1>
                 <div class="tilpas-content">
-                    <i id="tilpas-content-back" class="fa-solid fa-circle-left"></i>
                     <!-- Del 1 -->
                     <div class="tilpas-content-part" id="tilpas-content-part-1">
+                        <h1 id="tilpas-content-step">1/4</h1>
                         <h1>Vælg antal personer</h1>
                         <div class="tilpas-content-part-content">
                             <div class="tilpas-content-number">2</div>
@@ -116,6 +114,8 @@
                     </div>
                     <!-- Del 2 -->
                     <div class="tilpas-content-part" id="tilpas-content-part-2">
+                        <i id="tilpas-content-back" class="fa-solid fa-circle-left"></i>
+                        <h1 id="tilpas-content-step">2/4</h1>
                         <h1>Hvilke slags opskrifter kan du lide?</h1>
                         <div class="tilpas-content-part-content">
                             <div class="tilpas-content-card">Vegansk<i class="fa-solid fa-circle-info"></i></div>
@@ -127,6 +127,8 @@
                     </div>
                     <!-- Del 3 -->
                     <div class="tilpas-content-part" id="tilpas-content-part-3">
+                        <i id="tilpas-content-back" class="fa-solid fa-circle-left"></i>
+                        <h1 id="tilpas-content-step">3/4</h1>
                         <h1>Hvor mange dage ønsker du leveret?</h1>
                         <div class="tilpas-content-part-content">
                             <div class="tilpas-content-number">2</div>
@@ -137,6 +139,8 @@
                     </div>
                     <!-- Del 4 -->
                     <div class="tilpas-content-part" id="tilpas-content-part-4">
+                        <i id="tilpas-content-back" class="fa-solid fa-circle-left"></i>
+                        <h1 id="tilpas-content-step">4/4</h1>
                         <h1>Du er der næsten!</h1>
                         <div class="tilpas-content-part-content">
                             <div class="tilpas-content-form">
@@ -145,7 +149,7 @@
                                     <div><i class="fa-solid fa-envelope"></i><input required type="email" name="email" id="tilpas-signup-name" placeholder="Email adresse..."></div>
                                     <div><i></i><input required type="checkbox" name="terms" id="tilpas-signup-betingelser"> Accepter betingelser</div>
                                 </form>
-                                <button type="submit">Afslut</button>
+                                <button type="submit">Afslut<img src="../img/infografik/arrow.png" alt="arrow"></button>
                             </div>
                             <div class="tilpas-content-info">
                                 <p>Indtast dit navn og din email adresse så vi kan oprette dig, og du kan vælge ud fra ugens opskrifter og planlægge de 3 uger!</p>
@@ -154,6 +158,7 @@
                     </div>
                     <!-- Del 5 -->
                     <div class="tilpas-content-part" id="tilpas-content-part-5">
+                        <i id="tilpas-content-back" class="fa-solid fa-circle-left"></i>
                         <div class="tilpas-content-part-content">
                             <div class="tilpas-content-info">
                                 <h4>Velkommen til NIPPON</h4>
@@ -201,5 +206,6 @@
         </footer>
     </main>
     <script src="../scripts/navbar.js"></script>
+    <script src="../scripts/tilpas.js"></script>
 </body>
 </html>

@@ -48,6 +48,8 @@ body {
     overflow-y: auto;
     background-color: var(--pimary-color2);
     background-image: url('../img/mad.svg');
+    background-size: 40%;
+    background-blend-mode: soft-light;
 }
 
 main {
@@ -89,7 +91,7 @@ section {
     align-items: center;
     width: 100%;
     margin: 0 0 30px 0;
-    min-height: 70px;
+    min-height: 80px;
     overflow: hidden;
     position: relative;
 }
@@ -141,6 +143,14 @@ button:hover {
     background-color: #620d0d;
 }
 
+li a {
+    color: var(--text-color);
+}
+
+li a:hover {
+    color: var(--pimary-color2);
+}
+
 h1, h2, h3, h4, h5, h6 {
     margin: 10px 0;
 }
@@ -173,6 +183,8 @@ h6 { font-size: 1.1em; }
     position: sticky;
     background-color: var(--pimary-color2);
     background-image: url('../img/mad.svg');
+    background-size: 40%;
+    background-blend-mode: soft-light;
     color: var(--text-color);
     font-family: 'Gotham Rounded';
     font-size: 1.5em;
@@ -403,7 +415,7 @@ h6 { font-size: 1.1em; }
     color: var(--pimary-color2);
     text-transform: uppercase;
     font-size: 1.1em;
-    letter-spacing: 1em;
+    letter-spacing: 0.8em;
     background-color: rgb(82, 82, 82);
     background-image: url('../img/stock/AdobeStock_700461901_Preview.jpeg');
     background-size: cover;
@@ -427,7 +439,7 @@ h6 { font-size: 1.1em; }
     justify-content: center;
     align-items: start;
     gap: 10px;
-    width: 35%;
+    width: 40%;
 }
 
 .left-article-video-section article header {
@@ -436,10 +448,135 @@ h6 { font-size: 1.1em; }
 
 .left-article-video-section article button {
     margin-top: 30px;
+    font-size: 1.5em;
 }
 
 .left-article-video-section video {
-    width: 75%;
+    width: 60%;
+}
+
+.flex-cards-layout {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.retter-info-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 550px;
+    overflow: hidden;
+    background-color: var(--pimary-color1);
+    border-radius: 10px;
+    font-family: 'Mary Kate';
+    letter-spacing: 2px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    margin: 50px;
+    transform: scale(1);
+    transition: transform ease 0.2s;
+}
+.retter-info-card:hover {
+    transform: scale(1.05) rotateZ(1.5deg);
+    transition: transform ease 0.2s;
+}
+.retter-info-card-healthy {
+    background-color: var(--secondary-color1) !important;
+}
+.retter-info-card-healthy-row {
+    background-color: #8ccfff76 !important;
+}
+.retter-info-card-family {
+    background-color: var(--secondary-color2) !important;
+}
+.retter-info-card-family-row  {
+    background-color: #fff4587d !important;
+}
+.retter-info-card-vegan {
+    background-color: var(--secondary-color3) !important;
+}
+.retter-info-card-vegan-row  {
+    background-color: #ff994579 !important;
+}
+.retter-info-card-luxury {
+    background-color: var(--secondary-color4) !important;
+}
+.retter-info-card-luxury-row  {
+    background-color: #fed7fe80 !important;
+}
+.retter-info-card h4,
+.retter-info-card figcaption {
+    cursor: default;
+    font-size: 1.8em;
+}
+.retter-info-card p {
+    font-family: 'Calibri Regular';
+    letter-spacing: 0px;
+    font-size: 1.2em;
+    padding: 5px 0;
+}
+.retter-info-card-bg {
+    background-position: center center;
+    background-size: 160%;
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+.retter-info-card-category {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background-color: var(--pimary-color2);
+    border-radius: 10px 0 0 10px;
+    padding: 5px 20px;
+}
+.retter-info-card-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 26px);
+    height: 50%;
+    margin: 10px;
+    background-color: var(--pimary-color2);
+    border-radius: 10px;
+    border: 4px dashed var(--secondary-color3);
+}
+.retter-info-card-details-title {
+    margin: 10px 0;
+}
+.retter-info-card-details-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.retter-info-card-details-content-rows {
+    width: calc(100% - 20px);
+    margin: 0 10px;
+}
+.retter-info-card-details-content-rows div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 5px;
+    margin: 3px 0;
+    background-color: #ff994550;
+    border-radius: 5px;
+}
+.retter-info-card-details-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 
@@ -486,7 +623,8 @@ h6 { font-size: 1.1em; }
     height: fit-content;
     background-color: var(--pimary-color2);
     background-image: url('../img/mad.svg');
-    background-size: 40%;
+    background-blend-mode: soft-light;
+    background-size: 80%;
     position: relative;
     overflow: hidden;
     color: var(--text-color);
@@ -502,6 +640,14 @@ h6 { font-size: 1.1em; }
     color: var(--extra1);
     top: 20px;
     left: 20px;
+}
+
+#tilpas-content-step {
+    position: absolute;
+    font-size: 4em;
+    color: var(--extra1);
+    top: 0px;
+    right: 15px;
 }
 
 #tilpas-content-back:hover {
@@ -595,7 +741,7 @@ h6 { font-size: 1.1em; }
 }
 
 #tilpas-content-part-1 {
-    display: none;
+    display: flex;
 }
 #tilpas-content-part-2 {
     display: none;
@@ -606,7 +752,13 @@ h6 { font-size: 1.1em; }
 #tilpas-content-part-4 {
     display: none;
 }
+#tilpas-content-part-5 {
+    display: none;
+}
 
+#tilpas-content-part-4 .tilpas-content-part-content {
+    gap: 50px;
+}
 #tilpas-content-part-4 .tilpas-content-form {
     display: flex;
     flex-direction: column;
@@ -615,8 +767,7 @@ h6 { font-size: 1.1em; }
     width: 500px;
     font-size: 3em;
 }
-#tilpas-content-part-4 .tilpas-content-form div,
-#tilpas-content-part-5 .tilpas-content-form div {
+#tilpas-content-part-4 .tilpas-content-form div {
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -626,7 +777,7 @@ h6 { font-size: 1.1em; }
 }
 #tilpas-content-part-4 .tilpas-content-form i {
     color: var(--extra1);
-    width: 40px;
+    width: 70px;
 }
 #tilpas-content-part-4 .tilpas-content-form input[type=text],
 #tilpas-content-part-4 .tilpas-content-form input[type=email] {
@@ -639,9 +790,19 @@ h6 { font-size: 1.1em; }
     padding: 0 10px;
 }
 #tilpas-content-part-4 .tilpas-content-form input[type=checkbox] {
+    cursor: pointer;
     min-width: 30px;
     min-height: 30px;
     font-size: 0.8em;
+}
+#tilpas-content-part-4 .tilpas-content-form button {
+    position: relative;
+}
+#tilpas-content-part-4 .tilpas-content-form img {
+    width: 300px;
+    position: absolute;
+    top: 90px;
+    left: 0;
 }
 #tilpas-content-part-4 .tilpas-content-info,
 #tilpas-content-part-5 .tilpas-content-info {
@@ -667,6 +828,24 @@ h6 { font-size: 1.1em; }
 }
 
 
+/* OPSKRIFTSBLOG SIDE */
+
+
+.opskrift-container {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.opskrift-container img {
+    width: 101%;
+    height: auto;
+}
+
+
 /* FOOTER */
 
 
@@ -679,7 +858,8 @@ footer {
     padding: 30px;
     margin-top: 30px;
     background-color: var(--pimary-color1);
-    background-image: url('../img/food2.png');
+    background-image: url('../img/mad2.svg');
+    background-size: 40%;
     position: relative;
 }
 

@@ -6,11 +6,15 @@
         stroke-width: 0px;
       }
 
-      .cls-2 {
-        clip-path: url(#clippath-1);
+      .cls-1, .cls-2 {
+        fill: #9a1515;
       }
 
       .cls-3 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-4 {
         clip-path: url(#clippath);
       }
     </style>
@@ -177,8 +181,8 @@
       <g>
         <rect class="cls-1" x="684.19" y="343.03" width="2.29" height="1.33"/>
         <g>
-          <rect x="684.19" y="343.03" width="2.29" height="1.33"/>
-          <g class="cls-3">
+          <rect class="cls-2" x="684.19" y="343.03" width="2.29" height="1.33"/>
+          <g class="cls-4">
             <path class="cls-1" d="M686.58,344.33v-1.04h-2.15c.21.1.43.19.65.26.49.13,1,.41,1.5.78"/>
           </g>
         </g>
@@ -418,8 +422,8 @@
       <g>
         <rect class="cls-1" x=".02" y="340.37" width="3.73" height="3.99"/>
         <g>
-          <rect x=".02" y="340.37" width="3.73" height="3.99"/>
-          <g class="cls-2">
+          <rect class="cls-2" x=".02" y="340.37" width="3.73" height="3.99"/>
+          <g class="cls-3">
             <path class="cls-1" d="M.02,340.64v2.65h3.17c-.08-.07-.17-.14-.25-.21-.87-.8-2-1.6-2.92-2.44"/>
           </g>
         </g>
