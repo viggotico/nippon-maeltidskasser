@@ -15,69 +15,69 @@
         <div class="nav-flex">
             <div class="nav-left">
                 <ul>
-                    <li>Hjem</li>
+                    <li id="nav_hjem">Hjem</li>
                     <li class="sub-menu sub-mega-menu">
-                        <div class="sub-menu-title">
+                        <div class="sub-menu-title" id="nav_måltidskasser">
                             Måltidskasser
                             <i class="fa-solid fa-caret-down"></i>
                         </div>
                         <div class="mega-menu-content-wrapper">
                             <div class="mega-menu-content">
-                                <a href="" style="background-image: url('./img/stock/AdobeStock_630295082_Preview.jpeg');">
+                                <a id="nav_m_tilpas" style="background-image: url('./img/stock/AdobeStock_630295082_Preview.jpeg');">
                                     <h4>Skræddersyede</h4>
                                 </a>
-                                <a href="" style="background-image: url('./img/stock/AdobeStock_640408339_Preview.jpeg');">
+                                <a id="nav_m_vegansk" style="background-image: url('./img/stock/AdobeStock_640408339_Preview.jpeg');">
                                     <h4>Veganske</h4>
                                 </a>
-                                <a href="" style="background-image: url('./img/stock/AdobeStock_706907738_Preview.jpeg');">
+                                <a id="nav_m_børnevenlige" style="background-image: url('./img/stock/AdobeStock_706907738_Preview.jpeg');">
                                     <h4>Børnevenlige</h4>
                                 </a>
-                                <a href="" style="background-image: url('./img/stock/AdobeStock_700461901_Preview.jpeg');">
+                                <a id="nav_m_luksus" style="background-image: url('./img/stock/AdobeStock_700461901_Preview.jpeg');">
                                     <h4>Luksus</h4>
                                 </a>
-                                <a href="" style="background-image: url('./img/stock/AdobeStock_639785728_Preview.jpeg')">
+                                <a id="nav_m_sunde" style="background-image: url('./img/stock/AdobeStock_639785728_Preview.jpeg')">
                                     <h4>Sunde</h4>
                                 </a>
                             </div>
                         </div>
                     </li>
                     <li class="sub-menu">
-                        <div class="sub-menu-title" style="min-width: 260px;">
-                            <a href="">Sådan fungerer det</a>
+                        <div class="sub-menu-title" style="min-width: 260px;" id="nav_sfd">
+                            Sådan fungerer det
                             <i class="fa-solid fa-caret-down"></i>
                         </div>
                         <ul class="sub-menu-items">
-                            <li><a href="">Se vores priser</a></li>
-                            <li><a href="">Levering</a></li>
+                            <li id="nav_priser">Se vores priser</li>
+                            <li id="nav_levering">Levering</li>
                         </ul>
                     </li>
                 </ul>
             </div>
             <div class="nav-middle">
-                <a href="/"><img src="img/logo/nippon3.svg" alt="logo"></a>
+                <img id="nav_logo" src="./img/logo/nippon3.svg" alt="logo">
             </div>
             <div class="nav-right">
                 <ul>
                     <li class="sub-menu">
-                        <div class="sub-menu-title">
-                            <a href="">Om Nippon</a>
+                        <div class="sub-menu-title" id="nav_omos">
+                            Om Nippon
                             <i class="fa-solid fa-caret-down"></i>
                         </div>
                         <ul class="sub-menu-items">
-                            <li><a href="opskriftsblog">Opskriftsblog</a></li>
-                            <li><a href="">FAQ</a></li>
-                            <li><a href="">Vision</a></li>
+                            <li id="nav_opskriftsblog">Opskriftsblog</li>
+                            <li id="nav_faq">FAQ</li>
+                            <li id="nav_vision">Vision</li>
                         </ul>
                     </li>
-                    <li>Kontakt</li>
+                    <li id="nav_kontakt">Kontakt</li>
                     <li class="sub-menu">
-                        <div class="sub-menu-title">
-                            <a href="">Login</a>
+                        <div class="sub-menu-title" id="nav_login">
+                            Login
                             <i class="fa-solid fa-caret-down"></i>
                         </div>
                         <ul class="sub-menu-items">
-                            <li><a href="">Brugerprofil</a></li>
-                            <li><a href="">Planlæg</a></li>
+                            <li id="nav_brugerprofil">Brugerprofil</li>
+                            <li id="nav_planlæg">Planlæg</li>
                         </ul>
                     </li>
                     <li id="cart"><i class="fa-solid fa-cart-shopping"></i></li>
@@ -99,14 +99,14 @@
         <section id="onboarding">
             <div class="left-article-video-section">
                 <article>
-                    <h3>Se videoeon og følg de fire steps for at tilpasse din helt egen måltidskasse.</h3>
-                    <h4>1. Åh nej?!</h4>
-                    <h4>2. Jeg har glemt min task'!</h4>
-                    <h4>3. Whatever you're smoking, give me sum' of that.</h4>
-                    <h4>4. Tillykke, du er 563.832 kr. i gæld!</h4>
+                    <h3>Hvordan Skræddersyer jeg min egen måltidskasse?</h3>
+                    <h4>1. Svar på et par korte spørgsmål.</h4>
+                    <h4>2. Vælg til og fra ugens retter.</h4>
+                    <h4>3. Planlæg op til tre uger frem.</h4>
+                    <h4>4. Bestil og læn dig tilbage!</h4>
                     <button id="btn-kom-i-gang">Kom i gang!</button>
                 </article>
-                <video src="img/onboarding-example.mp4" autoplay muted loop>Video playback not supported.</video>
+                <video src="img/onboarding.mp4" autoplay muted loop>Video playback not supported.</video>
             </div>
         </section>
         <!-- Ugens menu -->
@@ -118,7 +118,7 @@
             <div class="flex-cards-layout">
                 <!-- Den sunde -->
                 <figure class="retter-info-card retter-info-card-healthy">
-                    <div class="retter-info-card-bg" style="background-image: url('../img/retter/12.svg');">
+                    <div class="retter-info-card-bg" style="background-image: url('./img/retter/12.svg');">
                         <h4 class="retter-info-card-category">Den sunde</h4>
                     </div>
                     <div class="retter-info-card-details">
@@ -139,7 +139,7 @@
                     </div>
                 </figure>
                 <figure class="retter-info-card retter-info-card-healthy">
-                    <div class="retter-info-card-bg" style="background-image: url('../img/retter/13.svg');">
+                    <div class="retter-info-card-bg" style="background-image: url('./img/retter/13.svg');">
                         <h4 class="retter-info-card-category">Den sunde</h4>
                     </div>
                     <div class="retter-info-card-details">
@@ -160,7 +160,7 @@
                     </div>
                 </figure>
                 <figure class="retter-info-card retter-info-card-healthy">
-                    <div class="retter-info-card-bg" style="background-image: url('../img/retter/14.svg');">
+                    <div class="retter-info-card-bg" style="background-image: url('./img/retter/14.svg');">
                         <h4 class="retter-info-card-category">Den sunde</h4>
                     </div>
                     <div class="retter-info-card-details">
@@ -182,7 +182,7 @@
                 </figure>
                 <!-- Børnefamillien -->
                 <figure class="retter-info-card retter-info-card-family">
-                    <div class="retter-info-card-bg" style="background-image: url('../img/retter/15.svg');">
+                    <div class="retter-info-card-bg" style="background-image: url('./img/retter/15.svg');">
                         <h4 class="retter-info-card-category">Børnefamillien</h4>
                     </div>
                     <div class="retter-info-card-details">
@@ -203,7 +203,7 @@
                     </div>
                 </figure>
                 <figure class="retter-info-card retter-info-card-family">
-                    <div class="retter-info-card-bg" style="background-image: url('../img/retter/16.svg');">
+                    <div class="retter-info-card-bg" style="background-image: url('./img/retter/16.svg');">
                         <h4 class="retter-info-card-category">Børnefamillien</h4>
                     </div>
                     <div class="retter-info-card-details">
@@ -224,7 +224,7 @@
                     </div>
                 </figure>
                 <figure class="retter-info-card retter-info-card-family">
-                    <div class="retter-info-card-bg" style="background-image: url('../img/retter/17.svg');">
+                    <div class="retter-info-card-bg" style="background-image: url('./img/retter/17.svg');">
                         <h4 class="retter-info-card-category">Børnefamillien</h4>
                     </div>
                     <div class="retter-info-card-details">
@@ -246,7 +246,7 @@
                 </figure>
                 <!-- Den veganske -->
                 <figure class="retter-info-card retter-info-card-vegan">
-                    <div class="retter-info-card-bg" style="background-image: url('../img/retter/18.svg');">
+                    <div class="retter-info-card-bg" style="background-image: url('./img/retter/18.svg');">
                         <h4 class="retter-info-card-category">Den veganske</h4>
                     </div>
                     <div class="retter-info-card-details">
@@ -267,7 +267,7 @@
                     </div>
                 </figure>
                 <figure class="retter-info-card retter-info-card-vegan">
-                    <div class="retter-info-card-bg" style="background-image: url('../img/retter/19.svg');">
+                    <div class="retter-info-card-bg" style="background-image: url('./img/retter/19.svg');">
                         <h4 class="retter-info-card-category">Den veganske</h4>
                     </div>
                     <div class="retter-info-card-details">
@@ -288,7 +288,7 @@
                     </div>
                 </figure>
                 <figure class="retter-info-card retter-info-card-vegan">
-                    <div class="retter-info-card-bg" style="background-image: url('../img/retter/20.svg');">
+                    <div class="retter-info-card-bg" style="background-image: url('./img/retter/20.svg');">
                         <h4 class="retter-info-card-category">Den veganske</h4>
                     </div>
                     <div class="retter-info-card-details">
@@ -310,7 +310,7 @@
                 </figure>
                 <!-- Luksuskassen -->
                 <figure class="retter-info-card retter-info-card-luxury">
-                    <div class="retter-info-card-bg" style="background-image: url('../img/retter/21.svg');">
+                    <div class="retter-info-card-bg" style="background-image: url('./img/retter/21.svg');">
                         <h4 class="retter-info-card-category">Luksuskassen</h4>
                     </div>
                     <div class="retter-info-card-details">
@@ -331,7 +331,7 @@
                     </div>
                 </figure>
                 <figure class="retter-info-card retter-info-card-luxury">
-                    <div class="retter-info-card-bg" style="background-image: url('../img/retter/22.svg');">
+                    <div class="retter-info-card-bg" style="background-image: url('./img/retter/22.svg');">
                         <h4 class="retter-info-card-category">Luksuskassen</h4>
                     </div>
                     <div class="retter-info-card-details">
@@ -352,7 +352,7 @@
                     </div>
                 </figure>
                 <figure class="retter-info-card retter-info-card-luxury">
-                    <div class="retter-info-card-bg" style="background-image: url('../img/retter/23.svg');">
+                    <div class="retter-info-card-bg" style="background-image: url('./img/retter/23.svg');">
                         <h4 class="retter-info-card-category">Luksuskassen</h4>
                     </div>
                     <div class="retter-info-card-details">
